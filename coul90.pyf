@@ -1,0 +1,41 @@
+!    -*- f90 -*-
+! Note: the context of this file is case sensitive.
+
+python module coul92 ! in 
+    interface  ! in :coul92
+        subroutine coul90(x,eta,xlmin,lrange,fc,gc,fcp,gcp,kfn,ifail) ! in :coul92:COUL90.FOR
+            double precision intent(in) :: x
+            double precision intent(in) :: eta
+            double precision intent(in) :: xlmin
+            integer intent(in) :: lrange
+            double precision dimension(lrange+1), intent(out), depend(lrange) :: fc
+            double precision dimension(lrange+1), intent(out), depend(lrange) :: gc
+            double precision dimension(lrange+1), intent(out), depend(lrange) :: fcp
+            double precision dimension(lrange+1), intent(out), depend(lrange) :: gcp
+            integer :: intent(in) kfn
+            integer :: intent(out) ifail
+            double precision :: paccq
+            integer :: nfp
+            integer :: npq
+            integer :: iexp
+            double precision :: cf1
+            double precision :: p
+            double precision :: q
+            double precision :: f
+            double precision :: gamma
+            common /steed/ paccq,nfp,npq,iexp,minl    !not required in code
+            common /deset/ cf1,p,q,f,gamma,wronsk     !information only
+        end subroutine coul90
+        subroutine jwkb(x,eta,xl,fjwkb,gjwkb,iexp) ! in :coul92:COUL90.FOR
+            double precision intent(in) :: x
+            double precision intent(in) :: eta
+            double precision intent(in) :: xl
+            double precision intent(out) :: fjwkb
+            double precision intent(out) :: gjwkb
+            integer intent(out) :: iexp
+        end subroutine jwkb
+    end interface 
+end python module coul92
+
+! This file was auto-generated with f2py (version:2).
+! See http://cens.ioc.ee/projects/f2py2e/

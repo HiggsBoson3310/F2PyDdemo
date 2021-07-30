@@ -1,0 +1,112 @@
+!    -*- f90 -*-
+! Note: the context of this file is case sensitive.
+
+python module gensub ! in 
+    interface  ! in :gensub
+        subroutine coulfg(ll,eps,rho,acc,f,fp,g,gp,k,ierr,actacc) ! in :gensub:MAABgensub.f
+            integer intent(in):: ll
+            real*8 intent(in):: eps
+            real*8 intent(in):: rho
+            real*8 intent(in):: acc
+            real*8 intent(out):: f
+            real*8 intent(out):: fp
+            real*8 intent(out):: g
+            real*8 intent(out):: gp
+            integer intent(out):: k
+            integer intent(out):: ierr
+            real*8 intent(out):: actacc
+        end subroutine coulfg
+        subroutine seaton(l,eryd,r,zion,f,fp,g,gp) ! in :gensub:MAABgensub.f
+            integer intent(in):: l
+            real*8 intent(in):: eryd
+            real*8 intent(in):: r
+            real*8 intent(in):: zion
+            real*8 intent(out):: f
+            real*8 intent(out):: fp
+            real*8 intent(out):: g
+            real*8 intent(out):: gp
+        end subroutine seaton
+        subroutine fogo(f0,fp0,g0,gp0,epsr,ll,ro,ww,acc,actacc) ! in :gensub:MAABgensub.f
+            real*8 intent(out):: f0
+            real*8 intent(out):: fp0
+            real*8 intent(out):: g0
+            real*8 intent(out):: gp0
+            real*8 intent(in):: epsr
+            integer intent(in):: ll
+            real*8 intent(in):: ro
+            real*8 intent(out):: ww
+            real*8 intent(in):: acc
+            real*8 intent(out):: actacc
+            real*8 :: aqdt
+            real*8 :: gqdt
+            real*8 :: fr0
+            real*8 :: fpr0
+            real*8 :: gr0
+            real*8 :: gpr0
+            common /agqdt/ aqdt,gqdt,fr0,fpr0,gr0,gpr0
+        end subroutine fogo
+        subroutine seaton1(l,eryd,r,zion,f,fp,g,gp) ! in :gensub:MAABgensub.f
+            integer intent(in):: l
+            real*8 intent(in):: eryd
+            real*8 intent(in):: r
+            real*8 intent(in):: zion
+            real*8 intent(out):: f
+            real*8 intent(out):: fp
+            real*8 intent(out):: g
+            real*8 intent(out):: gp
+        end subroutine seaton1
+        subroutine ganda(a,g,l,e,zion,nopt) ! in :gensub:MAABgensub.f
+            real*8 intent(out):: a
+            real*8 intent(out):: g
+            integer intent(in):: l
+            real*8 intent(in):: e
+            real*8 intent(in):: zion
+            integer :: nopt
+        end subroutine ganda
+        subroutine gcmplx(b,g,rl,gam) ! in :gensub:MAABgensub.f
+            real*8 intent(out):: b
+            real*8 intent(out):: g
+            real*8 intent(in):: rl
+            real*8 intent(in):: gam
+        end subroutine gcmplx
+        function gami(x,n) ! in :gensub:MAABgensub.f
+            real*8 intent(in):: x
+            integer intent(in):: n
+            real*8 intent(out):: gami
+        end function gami
+        function d1igam(x) ! in :gensub:MAABgensub.f
+            double precision intent(in):: x
+            double precision intent(out):: d1igam
+        end function d1igam
+        function digam(argg) ! in :gensub:MAABgensub.f
+            real*8 intent(in):: argg
+            real*8 intent(out):: digam
+        end function digam
+        function zdigam(arg) ! in :gensub:MAABgensub.f
+            complex*16 intent(in):: arg
+            complex*16 intent(out):: zdigam
+        end function zdigam
+        function rint ! in :gensub:MAABgensub.f
+            real*8  intent(in), depend(nb) :: f
+            integer intent(in)::na
+            integer intent(in):: nb
+            integer intent(in)::nq
+            real*8 intent(in) :: h
+            real*8 intent(out) :: rint
+            real*8 dimension(55) :: c
+            real*8 dimension(10) :: d
+            real*8 :: a
+            integer :: l
+            integer :: m
+            integer :: i 
+            integer :: j
+            integer :: n
+        end function rint
+    end interface 
+end python module gensub
+
+! This file was auto-generated with f2py (version:1.21.0).
+! See http://cens.ioc.ee/projects/f2py2e/
+
+!    -*- f90 -*-
+! Note: the context of this file is case sensitive.
