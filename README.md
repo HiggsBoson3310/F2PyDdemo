@@ -55,7 +55,7 @@ exit()
 
 To generate data, go into the HydrogenPolarizability.py file and write the name of the test to run at the end. There is a section of the code that describes all the programmed tests.
 
-Just type the name of the test to run. For instance to generate the plots tom compare with McNamara et al. (2018). Efficient calculation of Rayleigh and Raman scattering. Physical Review A, 98(4) we want to run test4. In the HydrogenPolarizability.py file go to the end and type 
+Just type the name of the test to run. For instance to generate the plots to compare with McNamara et al. (2018). Efficient calculation of Rayleigh and Raman scattering. Physical Review A, 98(4) we want to run test4. In the HydrogenPolarizability.py file go to the end and type 
 
 ```
 test4()
