@@ -529,7 +529,7 @@ def test3():
 
 #Test 4 generates data to be compared with figure 2,3,4,5 and 6 of McNamara et al.
 def test4():
-    '''omega1s = np.linspace(1e-3,np.sqrt(0.45),801)
+    omega1s = np.linspace(1e-3,np.sqrt(0.45),801)
     file = open("Cross_Sections/1sRamanRay.dat","w")
     for w in np.flip(omega1s):
         ww = 0.5-w**2
@@ -560,7 +560,7 @@ def test4():
     for w in omega3p:
         ww = 0.5/9+w
         file.write(("%.8f   %.8e   %.8e   %.8e \n")%(ww, sigma(ww,3,1,2,1), sigma(ww,3,1,4,1), sigma(ww,3,1,4,3)))
-    file.close()'''
+    file.close()
 
     omega3s = np.linspace(1e-3,np.sqrt(0.5/9-0.0001),401)
     file = open("Cross_Sections/3sRamanRay.dat", "w")
