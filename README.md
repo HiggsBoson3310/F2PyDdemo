@@ -42,7 +42,7 @@ It should run smoothly. The .pyf signature files contain the definition of the s
 To explore the defined functions and the requiered variables run the following right after the import lines while still in python:
 
 ```
-print(gensub.seaton.__seaton__)
+print(gensub.seaton.__doc__)
 ```
 
 This will print the necessary input for the function and the output. There is no description, but the notation is the same from the source fortran codes. 
