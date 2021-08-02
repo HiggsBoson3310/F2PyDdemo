@@ -68,10 +68,14 @@ After saving, go to the terminal in the folder of the repo and type
 ```
 python HydrogenPolarizability.py
 ```
-this takes a while to run (from 45 minutes to an hour), but generates the cross sections in a dense mesh and stores them in the "CrossSections" directory. This generates files with the different cross sections. The first column is always the photon energy (x axis) and the other columns are explained in the code, all of them are in cm^2 so make sure to divide by 10^4 and the Thompson cross section 6.652e-29 to get the same units as in the paper. The files preloaded in the directory correspond to the data from the MacNamara paper. The name of the files indicates the involved states. 
+this takes a while to run (from 45 minutes to an hour <sup> 1 <\sup>), but generates the cross sections in a dense mesh and stores them in the "CrossSections" directory. This generates files with the different cross sections. The first column is always the photon energy (x axis) and the other columns are explained in the code, all of them are in cm^2 so make sure to divide by 10^4 and the Thompson cross section 6.652e-29 to get the same units as in the paper. The files preloaded in the directory correspond to the data from the MacNamara paper. The name of the files indicates the involved states. 
 
-Other tests involve checks for the Dalgarno Lewis radial function (test0), Table 1 from the Sadeghpour et al paper [1] (test1), a test on the continuity of the Green's function in energy for fixed values of r and r prime (testgf).
+Other tests involve checks for the Dalgarno Lewis radial function (test0), Table 1 from the Sadeghpour et al paper [1] (test1), a test on the continuity of the Green's function in energy for fixed values of r and r prime (testgf).\
 
+<sup>1<\sup> This is subject to optimization. The sums over the final magnetic states can be simplified and the density of the mesh in which the DL radial function is sampled can be reduced without significant losses in accuracy. At this point what slows down the code is the slow python for loop. 
+  
+  
+  
 References:\
 [1] Sadeghpour, H. R., & Dalgarno, A. (1992). Rayleigh and Raman Scattering by Hydrogen and Caesium. Journal of Physics B: Atomic, Molecular and Optical Physics, 25(22), 4801–4809 \
 [2] McNamara et al. (2018). Efficient calculation of Rayleigh and Raman scattering. Physical Review A, 98(4) \
