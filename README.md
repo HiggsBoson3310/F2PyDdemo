@@ -70,6 +70,6 @@ this takes a while to run, but generates the cross sections in a dense mesh and 
 
 Othr tests involve sanity checks for the Dalgarno Lewis radial function (test0), Table 1 from the Sadeghpour et al paper cited above (test1), a test on the continuity of the Greens function in energy for fixed values of r and r prime (testgf).
 
-References:
-[1] Sadeghpour, H. R., & Dalgarno, A. (1992). Rayleigh and Raman Scattering by Hydrogen and Caesium. Journal of Physics B: Atomic, Molecular and Optical Physics, 25(22), 4801–4809
-[2] McNamara et al. (2018). Efficient calculation of Rayleigh and Raman scattering. Physical Review A, 98(4) 
+References:\n
+[1] Sadeghpour, H. R., & Dalgarno, A. (1992). Rayleigh and Raman Scattering by Hydrogen and Caesium. Journal of Physics B: Atomic, Molecular and Optical Physics, 25(22), 4801–4809 \n
+[2] McNamara et al. (2018). Efficient calculation of Rayleigh and Raman scattering. Physical Review A, 98(4) \n
