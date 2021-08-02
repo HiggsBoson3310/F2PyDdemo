@@ -37,7 +37,7 @@ import coul92
 import couln
 ```
 
-It should run smoothly. The .pyf signature files contain the definition of the subroutines and functions in each one of the fortran source files (which can then be called as python functions) and the variables that are used in with identification as an input or output variable. The syntax of the pyf files is similar to Fortran 90. 
+It should run smoothly. The .pyf signature files contain the definition of the subroutines and functions in each one of the fortran source files (which can then be called as python functions) and the variables that are used in each function or subroutine with identification as an input or output. The syntax of the pyf files is similar to Fortran 90. 
 
 To explore the defined functions and the requiered variables run the following right after the import lines while still in python:
 
