@@ -1,7 +1,7 @@
 # F2PyDdemo
 This is a simple example of how to use Fortran code in Python by using the numpy package and the F2Py module.
 
-The code computes the Rayleigh and Raman scattering cross sections (in cm^2) for Hydrogenic states. It does it by the Lewis dalgarno method. The calculation follows Sadeghpour, H. R., & Dalgarno, A. (1992). Rayleigh and Raman Scattering by Hydrogen and Caesium. Journal of Physics B: Atomic, Molecular and Optical Physics, 25(22), 4801–4809. And the details of the calculation can be found in the notes in this repo.
+The code computes the Rayleigh and Raman scattering cross sections (in cm^2) for Hydrogenic states. It does it by the Dalgarno-Lewis method. The calculation follows Sadeghpour, H. R., & Dalgarno, A. (1992). Rayleigh and Raman Scattering by Hydrogen and Caesium. Journal of Physics B: Atomic, Molecular and Optical Physics, 25(22), 4801–4809. And the details of the calculation can be found in the notes in this repo.
 
 The following instructions allow you to run the code in a LINUX (UNIX) machine with Python 3 installed and with the current version of numpy (1.21.1) and scipy (1.7.0).
 For the Halstead machine in Purdue this is loaded by using the commands 
