@@ -1,7 +1,7 @@
 # F2PyDdemo
 This is a simple example of how to use Fortran code in Python by using the numpy package and the F2Py module.
 
-The code computes the Rayleigh and Raman scattering cross sections (in cm^2) for Hydrogenic states. It does it by the Dalgarno-Lewis method. The calculation follows Sadeghpour, H. R., & Dalgarno, A. (1992). Rayleigh and Raman Scattering by Hydrogen and Caesium. Journal of Physics B: Atomic, Molecular and Optical Physics, 25(22), 4801–4809. And the details of the calculation can be found in the notes in this repo.
+The code computes the Rayleigh and Raman scattering cross sections (in cm^2) for Hydrogenic states. It does it by the Dalgarno-Lewis method. The calculation follows Sadeghpour et a [1]. And the details of the calculation can be found in the notes in this repo.
 
 The following instructions allow you to run the code in a LINUX (UNIX) machine with Python 3 installed and with the current version of numpy (1.21.1) and scipy (1.7.0).
 For the Halstead machine in Purdue this is loaded by using the commands 
@@ -55,7 +55,7 @@ exit()
 
 To generate data, go into the HydrogenPolarizability.py file and write the name of the test to run at the end. There is a section of the code that describes all the programmed tests.
 
-Just type the name of the test to run. For instance to generate the plots to compare with McNamara et al. (2018). Efficient calculation of Rayleigh and Raman scattering. Physical Review A, 98(4) we want to run test4. In the HydrogenPolarizability.py file go to the end and type 
+Just type the name of the test to run. For instance to generate the plots to compare with MacNamara et al [2] we want to run test4. In the HydrogenPolarizability.py file go to the end and type 
 
 ```
 test4()
@@ -70,4 +70,6 @@ this takes a while to run, but generates the cross sections in a dense mesh and 
 
 Othr tests involve sanity checks for the Dalgarno Lewis radial function (test0), Table 1 from the Sadeghpour et al paper cited above (test1), a test on the continuity of the Greens function in energy for fixed values of r and r prime (testgf).
 
- 
+References:
+[1] Sadeghpour, H. R., & Dalgarno, A. (1992). Rayleigh and Raman Scattering by Hydrogen and Caesium. Journal of Physics B: Atomic, Molecular and Optical Physics, 25(22), 4801–4809
+[2] McNamara et al. (2018). Efficient calculation of Rayleigh and Raman scattering. Physical Review A, 98(4) 
