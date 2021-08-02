@@ -45,7 +45,7 @@ To explore the defined functions and the requiered variables run the following r
 print(gensub.seaton.__doc__)
 ```
 
-This will print the necessary input for the function and the output. There is no description, but the notation is the same from the source fortran codes. 
+This will print the necessary input for the function and the output. There is no description fo each parameter, but the notation is the same from the fortran source codes. 
 
 To exit python back into the linux terminal type 
 
